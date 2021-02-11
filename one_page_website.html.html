@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-IE">
+    <head>
+        <!--Title and Tags -->
+        <meta charset="utf-8">
+        <meta name="description" content="Unofficial F1 Fan Club">
+        <meta name="keywords" content="F1, Survey, Fan">
+        <meta name="author" content="William Twomey">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>F1 Unofficial Fan-Club</title>
+        <!--Title and Tags END-->
+    </head>
+    
+    <body>
+        <!-- NAVIGATION -->
+        <div class="topnav">
+            <a class="active" href="home">Home</a>
+            <a href="#news">News</a>
+            <a href="#gallery">Gallery of Champions</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <!-- NAVIGATION END -->
+        
+        <!-- WELCOME BANNER -->
+        <div>
+            <img src="images/image_f1_logo.png" alt="F1 Logo">
+            <div>
+                <h1>Welcome to the F1 Unofficial Fan's Club</h1>
+                <p>The club made by F1 fans for F1 fan's. </p>
+            </div>
+        </div>
+        <!-- WELCOME BANNER END -->
+        
+        <div id="news">
+            <h3>Current F1 News</h3>
+            <p>With all teams agreeing to freeze engine regulations this is good news for the Reb-Bull Honda engine take over.</p>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fmIQ4vHVUMw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!-- GALLERY OF CHAMPIONS -->
+        <div>
+            <div id="gallery">
+                <h2>Gallery of Champions</h2>
+                <div>
+                    <h3>Lewis Hamilton champion in 2008,2015,2017,2018,2019,2020.</h3>
+                    <img src="images/lewis_hamilton_1.jpg" alt="Lewis Hamilton">
+                    <h3>Nico Rosberg champion in 2016.</h3>
+                    <img src="images/nico_rosberg_01.jpg" alt="Nico Rosberg">
+                    <h3>Sebastian Vettel champion in 2010,2011,2012,2013,2014.</h3>
+                    <img src="images/sebastian_vettel_1.jpg" alt="Sebastian Vettel">
+                    <h3>Jenson Button champion in 2009.</h3>
+                    <img src="images/jenson_button_1.jpg" alt="Jenson Button">
+                    <h3>Kimi Raikkonen champion in 2007.</h3>
+                    <img src="images/kimi%20raikkonen_1.jpg" alt="Kimi Raikkonen">
+                    <h3>Fernando Alonso champion in 2005,2006.</h3>
+                    <img src="images/fernando_alonso_01.jpg" alt="Fernando Alonso">
+                    <h3>Michael Schumacher champion in 1994,1995,2000,2001,2002,2003,2004.</h3>
+                    <img src="images/michael_schumacher_01.jpg" alt="Michael Schumacher">
+                </div>
+            </div>
+        </div>
+        <!-- GALLERY OF CHAMPIONS -->
+        
+        <!-- SURVEY -->
+        <div>
+            <div id="contact">
+                <h2>Tell us about yourself any your F1 Experence</h2>
+                <form action="" method="post">
+                    <!-- PERSONS DETAILS -->
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" required><br>
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" id="lastname" name="lastname" required><br>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    <label for="d.o.b">Date of Birth:</label>
+                    <input type="date" id="d.o.b" name="d.o.b" required>
+                    <!-- PERSONS DETAILS END -->
+                    
+                    <!--WATCHING F1 -->
+                    <h4>What era of F1 did you start watching?</h4>
+                    <input type="radio" id="50's-70's" name="50's-70's" value="50's-70's">
+                    <label for="50's-70's">50's-70's</label><br>
+                    <input type="radio" id="80's-90's" name="80's-90's" value="80's-90's">
+                    <label for="80's-90's">80's-90's</label><br>
+                    <input type="radio" id="00's-10's" name="00's-10's" value="00's-10's">
+                    <label for="00's-10's">00's-10's</label><br>
+                    <input type="radio" id="20's" name="20's" value="20's">
+                    <label for="20's">20's</label><br>
+                    <!--WATCHING F1 END-->
+                    
+                   <!-- WINNING CONSTRUCTORS -->
+                    <h4>Who do you think will win the constructors title this year?</h4>
+                    <label for="team">Pick a team</label>
+                    <select id="team" name="team">
+                        <option value="Alfa Romeo-Ferrari" selected>Alfa Romeo-Ferrari</option>
+                        <option value="AlphaTauri-Honda">AlphaTauri-Honda</option>
+                        <option value="Alpine-Renault">Alpine-Renault</option>
+                        <option value="Aston Martin-Mercedes">Aston Martin-Mercedes</option>
+                        <option value="Ferrari">Ferrari</option>
+                        <option value="Haas-Ferrari">Hass-Ferrari</option>
+                        <option value="McLaren-Mercedes">McLaren-Mercedes</option>
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Red Bull Racing-Honda">Red Bull Racing-Honda</option>
+                        <option value="Williams-Mercedes">Williams-Mercedes</option>
+                    </select>
+                    <!-- WINNING CONSTRUCTORS -->
+                    
+                    <p><input type="submit"></p>
+                </form>
+            </div>
+        </div>
+        <!-- SURVEY END -->
+        <footer>
+            The F1 Unoffical Fan Club Website by William Twomey&#xa9; 2021
+        </footer>
+        
+    
+    </body>
+</html>
