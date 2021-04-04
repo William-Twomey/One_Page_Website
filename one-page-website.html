@@ -3,6 +3,7 @@
     <head>
         <!--Title and Tags -->
         <meta charset="utf-8">
+        <script src="./Javascript/JS.js" defer></script>
         <link rel="stylesheet" type="text/css" href="./CSS/stylesheet.css">
         <meta name="description" content="Unofficial F1 Fan Club">
         <meta name="keywords" content="F1, Survey, Fan">
@@ -44,107 +45,91 @@
     </div>
         
         <!-- GALLERY OF CHAMPIONS -->
-        <div id="gallery">
-            <div class="container">
-                <h1 id="gallery-of-champions">Gallery of Champions</h1>
-                <div class="flex-container">
-                    
-                    <!-- PHOTO CONTAINER 1 -->
-                    <div class="photo-container">
-                        <div class="photo">
-                            <img src="images/lewis_hamilton_1.jpg" alt="Lewis Hamilton">
-                            <div class="photo-overlay">
-                                <h3>Lewis Hamilton</h3><p>Champion in 2008,2014,2015,2017,2018,2019,2020.</p>
-                                <a href="https://www.formula1.com/en/drivers/lewis-hamilton.html" class="link">View Lewis's bio here</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- PHOTO CONTAINER 1 END-->
-
-                    <!-- PHOTO CONTAINER 2 -->
-                    <div class="photo-container">
-                        <div class="photo">
-                            <img src="images/nico_rosberg_01.jpg" alt="Nico Rosberg">
-                            <div class="photo-overlay">
-                                <h3>Nico Rosberg champion in 2016.</h3>
-                                <p><a href="https://www.formula1.com/en/drivers/hall-of-fame/Nico_Rosberg.html" class="link">View Nico's bio here</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- PHOTO CONTAINER 2 END-->
-
-                    <!-- PHOTO CONTAINER 3 -->
-                    <div class="photo-container">
-                        <div class="photo">
-                            <img src="images/sebastian_vettel_1.jpg" alt="Sebastian Vettel">
-                            <div class="photo-overlay">
-                                <h3>Sebastian Vettel champion in 2010, 2011, 2012, 2013.</h3>
-                                <p><a href=https://www.formula1.com/en/drivers/sebastian-vettel.html class="link">View Sebastian's bio here</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- PHOTO CONTAINER 2 END-->
-
-                    <!-- PHOTO CONTAINER 3 -->
-                    <div class="photo-container">
-                        <div class="photo">
-                            <img src="images/jenson_button_1.jpg" alt="Jenson Button">
-                            <div class="photo-overlay">
-                                <h3>Jenson Button champion in 2009.</h3>
-                                <p><a href="https://www.formula1.com/en/drivers/hall-of-fame/Jenson_Button.html" class="link">View Jenson's bio here</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- PHOTO CONTAINER 3 END-->
-
-                    <!-- PHOTO CONTAINER 4 -->
-                    <div class="photo-container">
-                        <div class="photo">
-                            <img src="images/kimi_raikkonen_1.jpg" alt="Kimi Raikkonen">
-                            <div class="photo-overlay">
-                                <h3>Kimi Raikkonen champion in 2007.</h3>
-                                <p><a href="https://www.formula1.com/en/drivers/kimi-raikkonen.html" class="link">View Kimi's bio here</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- PHOTO CONTAINER 4 END-->
-
-                    <!-- PHOTO CONTAINER 5 -->
-                    <div class="photo-container">
-                        <div class="photo">
-                            <img src="images/fernando_alonso_01.jpg" alt="Fernando Alonso">
-                            <div class="photo-overlay">
-                                <h3>Fernando Alonso champion in 2005,2006.</h3>
-                                <p><a href="https://www.formula1.com/en/drivers/hall-of-fame/Fernando_Alonso.html" class="link">View Fernando's bio here</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- PHOTO CONTAINER 5 END-->
-
-                    <!-- PHOTO CONTAINER 6 -->
-                    <div class="photo-container">
-                        <div class="photo">
-                            <img src="images/michael_schumacher_01.jpg" alt="Michael Schumacher">
-                            <div class="photo-overlay">
-                                <h3>Michael Schumacher</h3><p>Champion in 1994,1995,2000,2001,2002,2003,2004.</p>
-                                <p><a href="https://www.formula1.com/en/drivers/hall-of-fame/Michael_Schumacher.html" class="link">View Michael's bio here</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- PHOTO CONTAINER 6 END-->
-
-                   
+    <div id="gallery">
+        <h2 style="text-align:center">Gallery of Champions</h2>
+        
+        <!--Image on the front of the page START-->
+        <div class="row">
+          
+            <div class="column">
+                <img src="./Images/lewis_hamilton_01.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            </div>
+          
+            <div class="column">
+                <img src="./Images/nico_rosberg_01.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            </div>
+          
+            <div class="column">
+                <img src="./Images/sebastian_vettel_01.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            </div>
+          
+            <div class="column">
+                <img src="./Images/jenson_button_01.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            </div>
+        
+        </div>
+        <!--Image on the front of the page END-->
+        
+        <!--Modal START-->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+                
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="./Images/lewis_hamilton_02.jpg" style="width:100%">
                 </div>
+        
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="./Images/nico_rosberg_02.jpg" style="width:100%">
+                </div>
+        
+                 <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="./Images/sebastian_vettel_02.jpg" style="width:100%">
+                </div>
+            
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="./Images/jenson_button_02.jpg" style="width:100%">
+                </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+        <!--Modal END-->
+        
+            <div class="column">
+              <img class="demo cursor" src="./Images/lewis_hamilton_02.jpg" style="width:100%" onclick="currentSlide(1)" alt="Lewis Hamilton<br> Champion in 2008, 2014, 2015, 2017, 2018, 2019, 2020">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./Images/nico_rosberg_02.jpg" style="width:100%" onclick="currentSlide(2)" alt="Nico Rosberg<br>Champion in 2016">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./Images/sebastian_vettel_02.jpg" style="width:100%" onclick="currentSlide(3)" alt="Sebastian Vettel<br> Champion in 2010, 2011, 2012, 2013">
+            </div>
+            <div class="column">
+              <img class="demo cursor" src="./Images/jenson_button_02.jpg" style="width:100%" onclick="currentSlide(4)" alt="Jenson Button<br> Champion in 2009">
+            </div>
+          
             </div>
         </div>
-        <!-- GALLERY OF CHAMPIONS -->
+    </div>
+
+        
+        
+        <!-- GALLERY OF CHAMPIONS END -->
         
         <!-- SURVEY -->
         <div class="container">
             <div id="contact">
                 <h2>Tell us about yourself and your F1 Experence</h2>
                 
-                <form action="" method="post">
+                <form action="https://formspree.io/f/mvovjlnp" method="post">
                         <!-- PERSONS DETAILS -->
                     <div class="details">
                         <label for="firstname">First Name:</label>
